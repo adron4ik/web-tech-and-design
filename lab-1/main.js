@@ -3,7 +3,7 @@
       const data = {
         labels: labels,
         datasets: [{
-          label: "Sales for week",
+          label: "Ssdsd",
           data: [32, 15, 84, 89, 32, 22, 11],
           borderColor: "rgba(255, 99, 132, 1)",
           backgroundColor: [
@@ -21,7 +21,7 @@
       };
 
       const config = {
-        type: "pie",
+        type: "line",
         data: data,
         options: {
           responsive: true,
@@ -32,8 +32,17 @@
             },
             legend: {
               position: "right"
+            },
+            customCanvasBackgroundColor: {
+              color: 'lightGreen',
+            },
+            subtitle: {
+              Display: true,
+              text: 'sdsdsdsd'
             }
-          }
+          },
+          
+          
         }
       };
 
