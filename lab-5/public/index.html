@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Студент</title>
+</head>
+<body>
+  <h1>Інформація про студента</h1>
+
+  <div id="data"></div>
+
+  <h2>Оновити дані:</h2>
+
+  <form action="/update" method="POST">
+    <input name="name" placeholder="Ім’я"><br><br>
+    <input name="group" placeholder="Група"><br><br>
+    <input name="message" placeholder="Повідомлення"><br><br>
+    <button>Зберегти</button>
+  </form>
+
+  <script>
+    fetch("/json")
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById("data").innerHTML = `
+          <p>Ім’я: ${d.name}</p>
+          <p>Група: ${d.group}</p>
+          <p>Повідомлення: ${d.message}</p>
+        `;
+      });
+  </script>
+</body>
+</html>
