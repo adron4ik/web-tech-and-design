@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs = require('fs');
 
 fs.readFile('file.txt', 'utf8', (err, data) => {
@@ -13,3 +14,19 @@ fs.readFile('file.txt', 'utf8', (err, data) => {
 });
 
 
+=======
+const fs = require('fs')
+
+fs.readFile('file.txt', 'utf8',  (err, data) => {
+    const addToStr = '\nFFFFFFFFFFFFF'
+    if (err) throw err
+    fs.writeFile(
+        'result.txt',
+        data + addToStr,
+        (err => {
+            if(err) throw err
+            console.log('file have been created')
+        })
+    )
+}) 
+>>>>>>> 27096e1f5b4ff212cfafa13bda851c0eb087466c

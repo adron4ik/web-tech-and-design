@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH
+=======
+sfknsfjlbnsfnsf
+>>>>>>> 27096e1f5b4ff212cfafa13bda851c0eb087466c
