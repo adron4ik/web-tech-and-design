@@ -1,0 +1,131 @@
+/* Загальний стиль сторінки */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f5f9;
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+/* Заголовки */
+h1, h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Фільтр */
+#filter {
+  display: block;
+  margin: 0 auto 25px;
+  width: 300px;
+  padding: 10px 15px;
+  border: 2px solid #4a8cff;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+#filter:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(74, 140, 255, 0.5);
+}
+
+/* Список студентів */
+#studentsList {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+#studentsList li {
+  background: white;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s;
+}
+
+#studentsList li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.student-info {
+  font-size: 16px;
+}
+
+.student-actions button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.edit-btn {
+  background: #4a8cff;
+}
+
+.edit-btn:hover {
+  background: #2b6ce3;
+}
+
+.delete-btn {
+  background: #ff4a4a;
+}
+
+.delete-btn:hover {
+  background: #d93535;
+}
+
+/* Форма */
+#studentForm {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#studentForm input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+#studentForm input:focus {
+  border-color: #4a8cff;
+  box-shadow: 0 0 6px rgba(74, 140, 255, 0.4);
+  outline: none;
+}
+
+#studentForm button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #4a8cff;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#studentForm button:hover {
+  background: #2b6ce3;
+}
